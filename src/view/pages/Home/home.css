@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Tilt+Neon&display=swap');
+
+.home {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container__home {
+    width: 100%;
+    padding-top: 20px;
+    padding-inline: 10%;
+}
+
+.home__title {
+    text-align: center;
+    font-size: 90px;
+    color: white;
+    font-family: 'Pacifico';
+    margin-bottom: 10px;
+}
+
+.home__description {
+    text-align: center;
+    font-size:30px;
+    font-family: 'Tilt Neon';
+    color: rgba(255, 255, 255, 0.87);
+}
+
+.carrusel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 45%;
+}
+
+@media only screen and (max-width : 900px) {
+
+    .home {
+        flex-direction: column;
+    }
+
+    .container__home {
+        width: 100%;
+        padding: 5px;
+    }
+    
+    .home__title {
+        width: 100%;
+        text-align: center;
+        font-size: 45px;
+    }
+
+    .home__description {
+        text-align: center;
+        font-size: 27px;
+    }
+
+    .carrusel {
+        margin-bottom: 30px;
+        margin-top: 20px;
+        width: 100%;
+    }
+
+}
+
+

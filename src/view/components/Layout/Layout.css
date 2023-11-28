@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Titan+One&family=Unbounded&display=swap');
+
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    transition: 0.3s ease-in-out;
+}
+
+header.shadow {
+    background-color: #328d32;
+}
+
+.todo {
+    height: 100%;
+    background-blend-mode: soft-light;
+    background-color: rgba(0, 0, 0, 0.685);
+}
+
+.header__title {
+    font-weight: 100;
+    color: white;
+    text-decoration: none;
+}
+
+.container__title {
+    gap: 15px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    color: white;
+    font-family: 'Titan One';
+}
+
+
+.header__list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 27px;
+    list-style: none;
+}
+
+.header__list a {
+    cursor: pointer;
+    text-decoration: none;
+    font-family: 'Unbounded';
+    color: white;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+.header__list a:hover {
+    text-decoration: underline;
+    font-size: 19px;
+}
+
+main {
+    width: 100%;
+    min-height: calc(100vh - 83px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+}
+
+section {
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+
+.footer {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container__footer {
+    padding: 20px;
+    display: inline-block;
+    text-align: center;
+}
+
+.redes {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    gap: 20px;
+    color: #dfe4e0;
+}
+
+.information__footer {
+    color: #dfe4e0;
+}
+
+.information {
+
+    flex-direction: column;
+    display: flex;
+    margin-top: 10px;
+    gap: 5px;
+}
+
+.logout {
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: large;
+    font-family: 'Unbounded';
+    transition: 0.3s;
+}
+
+.logout:hover {
+    text-decoration: underline;
+    font-size: larger;
+}
+
+
+/* Responsive */ 
+
+@media only screen and (max-width : 900px) {
+    
+    .header {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .header__list {
+        gap: 10px;
+        margin-top: 10px;
+        padding: 10px;
+    }
+
+    .header__list a:hover {
+        text-decoration: underline;
+        font-size: 18.5px;
+    }
+    
+    main {
+        padding: 0;
+        width: 100%;
+    }
+}

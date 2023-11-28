@@ -1,0 +1,50 @@
+.Services {
+    width: 100%;
+    padding: 50px;
+}
+
+.Container__Services {
+    margin: 0;
+    padding: 0;
+    border: none;
+    display: grid;
+    grid-template-columns: repeat(1, 3fr);
+    gap: 20px;
+}
+
+.Section_Services {
+    border-radius: 20px;
+}
+
+.Hand {
+    padding-block: 5px;
+}
+
+.target {
+    border-radius: 14px;
+    background-color: grey;
+    padding: 10px;
+    height: 100%;
+    width: 100%;
+}
+
+.Hand-Services {
+    gap: 10px;
+    padding: 5px;
+    background-color: aqua;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    
+}
+
+
+.Foot-Services {
+    background-color: azure;
+}
+
+
+.Hair-Services {
+    background-color: blue;
+}
